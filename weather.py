@@ -242,6 +242,7 @@ a = check_accuracy(X_test_col_ordered, y_test_col_ordered)
 st.write(f'Chỉ số Accuracy của mô hình ở tập X_test là {a}')
 
 with st.sidebar:
+    true_columns = []
     st.subheader("Vui lòng nhập các thông số dưới đây!")
     temp_text = st.number_input("Nhiệt độ trung bình (độ F)") 
     dewpoint_text = st.number_input("Nhiệt độ điểm sương trung bình (độ F)") 
