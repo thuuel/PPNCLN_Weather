@@ -275,4 +275,3 @@ with st.sidebar:
         result_events = classify_events(distancedf_input)
         true_columns = result_events.apply(lambda row: row.index[row].tolist(), axis=1)
         st.write(f"Với thông số trên, chúng tôi dự đoán rằng hôm ấy trời có {true_columns.tolist()}")
-        
